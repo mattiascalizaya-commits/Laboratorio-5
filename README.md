@@ -24,7 +24,7 @@ Podremos conocer diferentes tipos de formatos de textos usando Markdown.
 
 ## Colocar Imagenes
 
-![Imagen de ejemplo](docs/img/imagen.png)
+![Imagen de ejemplo](docs/img/maka.jpg)
 
 ## Funciones
 
@@ -45,19 +45,47 @@ Podremos conocer diferentes tipos de formatos de textos usando Markdown.
 
 ```html
 <h1>Hola Mundo</h1>
+```
 
 ```Css
 body{
     background: "red";
 }
+```
 
 ```Java
 public class Main {
     public static void main(String[] args)
     { System.out.println("Hola Mundo Java"); }
 }
+```
 
 ```Java Script
 let nombre = "Mundo";
 
 console.log("Hola, " + nombre + "!");
+```
+
+
+## Mermaid Diagramas
+
+```mermaid
+flowchart LR
+    U[Usuario] --> F[Frontend]
+    F --> API[API]
+    API --> AUTH[Autenticación]
+    API --> DAO[DAO]
+    DAO --> DB[(MySQL)]
+    API --> LOG[Registro de actividad]
+ ```
+
+
+
+```mermaid
+flowchart TD
+    T[TECSUP] --> C[Carreras disponibles en el sitio academico]
+    C --> D[Diseño]
+    C --> A[Administracion]
+    C --> I[Informatica]
+    C --> M[Mecanica]    
+```    
